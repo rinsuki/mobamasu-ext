@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "mobamasu-ext",
+    "version": "0.1",
+    "background": {
+        "scripts": [
+            "modify_ua.js"
+        ]
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://*.mbga.jp/"
+    ]
+}

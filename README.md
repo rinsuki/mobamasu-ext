@@ -1,0 +1,3 @@
+# mobamasu-ext
+
+ChromeApps版が廃止されたけどAndApp版がお世辞にもいいとは言えない物なのでChromeでそのままやり続けるのを支援するための拡張機能
