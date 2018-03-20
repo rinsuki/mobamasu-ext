@@ -7,6 +7,11 @@
             "modify_ua.js"
         ]
     },
+    "content_scripts": [{
+        "matches": ["*://sp.pf.mbga.jp/12008305/*"],
+        "css": ["content_style.css"],
+        "js": ["content_script.js"]
+    }],
     "permissions": [
         "webRequest",
         "webRequestBlocking",
