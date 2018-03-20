@@ -1,0 +1,9 @@
+/* ぷちデレラのアイテム使用ダイアログの出現座標がおかしい不具合に対処 */
+
+.jsItemPopup_mask {
+    left: inherit !important;
+}
+
+#jsItemPopup {
+    left: inherit !important;
+}
