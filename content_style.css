@@ -8,7 +8,6 @@
 /* ぷちデレラのテクニカルボードの挙動がおかしい不具合に対処 */
 
 .board#skillboard {
+    zoom: 1 !important;
     transform: none !important;
-    width: 100% !important;
-    height: inherit !important;
 }
