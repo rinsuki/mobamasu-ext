@@ -9,4 +9,6 @@
 
 .board#skillboard {
     transform: none !important;
+    width: 100% !important;
+    height: inherit !important;
 }
