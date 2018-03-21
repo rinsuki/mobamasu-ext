@@ -4,3 +4,9 @@
     position: fixed;
     left: calc(50vw - 160px) !important;
 }
+
+/* ぷちデレラのテクニカルボードの挙動がおかしい不具合に対処 */
+
+.board#skillboard {
+    transform: none !important;
+}
