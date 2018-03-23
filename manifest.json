@@ -3,9 +3,7 @@
     "name": "mobamasu-ext",
     "version": "0.1",
     "background": {
-        "scripts": [
-            "modify_ua.js"
-        ]
+        "scripts": ["background.js"]
     },
     "content_scripts": [{
         "matches": ["*://sp.pf.mbga.jp/12008305/*"],
