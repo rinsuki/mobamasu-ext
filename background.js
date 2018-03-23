@@ -9,3 +9,23 @@ chrome.webRequest.onBeforeSendHeaders.addListener((details) => {
 }, {
     urls: ["*://*.mbga.jp/*"]
 }, ["blocking", "requestHeaders"])
+
+chrome.browserAction.onClicked.addListener((tab) => {
+    // chrome.tabs.create({
+    //     url: 'opener.html',
+    //     active: false
+    // })
+    // アドレスバーを表示したポップアップダイアログを開くのが面倒臭いと俺の中で話題に
+    chrome.windows.getCurrent({}, (win) => {
+        chrome.windows.create({
+            url: "opener.html",
+            width: 1,
+            height: 1,
+            focused: false,
+        }, () => {
+            chrome.windows.update(win.id, {
+                focused: true
+            })
+        })
+    })
+})

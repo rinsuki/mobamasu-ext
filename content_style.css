@@ -1,6 +1,6 @@
 /* ぷちデレラまわりのダイアログの出現座標がおかしい不具合に対処 */
 
-.jsPopUp {
+.jsPopUp[style*="absolute"] {
     position: fixed;
     left: calc(50vw - 160px) !important;
 }
@@ -10,4 +10,10 @@
 .board#skillboard {
     zoom: 1 !important;
     transform: none !important;
+}
+
+/* ぷちデレラのテクニカルボードの開放確認ダイアログの出現位置がおかしい不具合に対処 */
+
+.p-modal .p-modal__window {
+    left: calc(50vw - 160px) !important;
 }
